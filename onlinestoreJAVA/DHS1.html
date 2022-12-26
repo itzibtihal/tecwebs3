@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title>exo tp web</title>
+      <meta charset="UTF-8">
+      
+      <meta name="description" content="its my web site ">
+     
+      <link rel="stylesheet" href="">
+       
+    </head>
+    <body>
+        <input type="number" placeholder="$-USD" id="dollar" style="margin: 5px;">
+        <input type="number" placeholder="$-DHS" id="dirham" style="margin: 5px;">
+
+
+        <script>
+            let dollar = document.getElementById('dollar');
+            let dirham = document.getElementById('dirham');
+
+            dollar.onkeyup = function(){
+                 //console.log(dollar.value)
+                 dirham.value = dollar.value * 10.49 ;
+            }
+
+            dirham.onkeyup = function(){
+                 //console.log(dollar.value)
+                 dollar.value  = dirham.value / 10.49 ;
+            }
+        </script>
+    </body>
+</html>

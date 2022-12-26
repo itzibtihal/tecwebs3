@@ -1,0 +1,41 @@
+
+#fichier {
+    color: black;
+}
+a :hover{
+    color: red;
+}
+
+body h1{
+    color: green;
+    background-color: aqua;
+}
+
+body>h1 {
+    color: blue;
+}
+
+div h1{
+    color: brown;
+}
+
+div+h1{
+    color: darkorange;
+}
+h1{
+    font-variant: small-caps;
+}
+/*{
+    background-image: url(img/1.jpg);
+    background-repeat: repeat-x(5);
+}*/
+
+#para{
+    border-style: double ridge dotted;
+    border-width: 4px 10px ;
+    border-color: blue;
+}
+body{
+    margin: 100px;
+    padding: 10px;
+}

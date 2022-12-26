@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title>exo tp web</title>
+      <meta charset="UTF-8">
+      
+      <meta name="description" content="its my web site ">
+     
+      <link rel="stylesheet" href="">
+       
+    </head>
+    <body>
+        <button id="btn"> lets go !</button>
+        <input type="text" name="" id="inp">
+
+
+        <script>
+            let btn = document.getElementById('btn');
+            let inp = document.getElementById('inp');
+
+
+           /* btn.onmouseup = function(){
+                 console.log('lfin ?')
+            }*/
+
+
+            /*btn.onmousedown = function(){
+                 console.log('lfin ?')
+            }*/
+
+
+
+            // khas ghi tkun souris ela l button o ykhdem
+            /*
+            btn.onmouseover = function(){
+                 console.log('lfin ?')
+            }*/
+
+            
+           // kykhdem ki la souris lfot lbuton
+            /*btn.onmouseout = function(){
+                 console.log('lfin ?')
+            }*/
+
+  //---------------------------------- keybord events ---------------
+            
+             // makayban wallo hta kanhyd yedi mn ela lclavier
+           /* inp.onkeyup= function(){
+                console.log('tku for info');
+            }*/
+            
+           /* inp.onkeydown= function(){
+                console.log('tku for info');
+            }*/
+
+ //---------------------------form
+             // mli iweta ela l input
+
+             inp.onfocus= function(){
+                this.style.border = ' 3px  solid red';
+            } 
+
+            // mli kankhrj mn l input
+            inp.onblur= function(){
+                this.style.border = ' 3px solid black'
+            }
+
+            // tytdkhul l la page
+            onload = function()
+            {
+                document.body.style.background = 'blue';
+            }
+
+        </script>
+    </body>
+</html>

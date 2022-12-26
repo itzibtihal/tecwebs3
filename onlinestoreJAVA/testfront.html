@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title>exo tp web</title>
+      <meta charset="UTF-8">
+      
+      <meta name="description" content="its my web site ">
+     
+      <link rel="stylesheet" href="style2.css">
+       
+    </head>
+    <body>
+        
+        <label for="fichier">fichier</label><br>
+        <input type="file" name="fichier" id="fichier"><br>
+        <input type="reset" value="effacer les donnes"><br>
+        <input type="submit" value="submit value"><br>
+        <label for="commentaire"><b>commentaire :</b></label>
+        <textarea name="commentaire" id="" cols="50" rows="3" placeholder="votre commentaire"></textarea>
+        <br><label for="pays"> les pays </label>
+        <select name="pays" id="pays">
+            <option value="maroc" selected="selected"> maroc</option>
+            <option value="frc"> frc</option>
+            <option value="porto"> porto</option>
+            <option value="spain"> spain</option>
+        </select>
+        <input type="date">
+        <input type="time">
+        <input type="datetime-local"><br>
+        <input type="week">
+        <input type="month">
+        <input type="tel"> <br>
+
+        <input type="password" value="123456789">
+        
+       <a href="www.facebook.com">facebook</a>
+         <h1>title 1</h1>
+         <p>ceci est mon premier pag hdtjhfderthujnbvfdertyghjkloiuhjgftfgh <em>ibtihaaaal</em> she is here</p>
+          <div>
+           <h1> deuxieme title</h1>
+           <div><em> un mot en emphase</em></div>
+           <p>heey all part 2 of ibtihals <em>problems</em> hhhhhhh</p>
+        </div>
+            <h1> title 3</h1>
+
+            <p id="para"> ceci est un paragraphe par ibtihal</p>
+          
+            <script>
+               var x=math.flor(Math.random()*100+1);
+               var y=parseInt(prompt("tenter un nombre"));
+               comp =1;
+               do{
+                if(x < y)
+                {
+                    y=parseInt(prompt("est plus grand"));
+
+                }else
+                   y= parseInt(prompt("est plus petit"));
+                   comp++;
+               }while( x != y);
+
+               document.write("vous avez tenter"+comp+"fois")
+            </script>
+        </body>
+</html>

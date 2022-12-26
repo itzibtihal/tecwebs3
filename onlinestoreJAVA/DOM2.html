@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title>exo tp web</title>
+      <meta charset="UTF-8">
+      
+      <meta name="description" content="its my web site ">
+     
+      <style>
+        .name{
+    color: orangered;
+    background-color: black;
+}
+      </style>
+       
+    </head>
+    <body>
+         <p id="hello"> hey y all</p>
+
+         <script>
+            let hello = document.getElementById('hello');
+                //add
+               /*hello.onclick = function()
+               {
+                hello.classList.add("name");
+               }
+                 //remove
+               hello.oncontextmenu = function(){
+                hello.classList.remove("name")
+               }*/
+
+               // both f wahed
+               hello.onclick = function(){
+                hello.classList.toggle("name")
+               }
+
+            //console.log(hello.classList)
+         </script>
+    </body>
+</html>

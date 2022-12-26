@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      
+      <meta charset="UTF-8">
+      
+      <meta name="description" content="its my web site ">
+     
+      <style>
+        body {
+            height: 2000px;
+            width: 2000px;
+
+        }
+
+        #btn{
+            width: 20px;
+            height: 20px;
+            border: none;
+            background: #fa0;
+            cursor: pointer;
+            position: fixed;                                                                                                                                                                                                
+            bottom: 10px;
+            right: 10px;
+            display: none;
+        }
+      </style>
+       
+    </head>
+    <body>
+        <!-- BOM = Bowser Object Model-->
+         
+        <button id="btn">^</button>
+        <script>
+            // ay haja dakhla f l window html o console b2 dakhlin f browser vuque l browser howa l window donc kmlin kytjm3u flwindow
+            // ay code kybda b l window f bon pratique 
+            
+            let btn = document.getElementById('btn');
+            window.onscroll = function(){
+                if( scrollY >= 400)
+                {
+                    btn.style.display ='block';
+                }else{
+                    btn.style.display ='none';
+
+                }
+            }
+            btn.onclick = function(){
+                scroll({
+                    left:0,
+                    top:0,
+                    behavior: "smooth",
+
+                })
+            }
+            console.log( screen.colorDepth)
+            console.log( screen.orientation.type)
+
+                 /*
+            // location
+            // kathtafed b les donnés li hna dyrin
+            location.assign();
+            // katmsehom o mat9dersh trje3 lihom ba9i
+            location.replace();
+            */
+
+
+            //settimeout == kn3tyw we9t ead kytafficha daqchi li bghina
+
+            setTimeout(function(){
+                console.log(' gomen senpai');
+            },5000)
+             //bash nhebsha 
+             let hello =setTimeout(function(){
+                console.log(' gomen senpai');
+            },5000)
+            clearTimeout(hello);
+
+
+
+            // setinterval
+            let i =0;
+            let hey= setInterval(function(){
+                console.log(' gomen onichan');
+                console.log(i++)
+                if(i == 4){
+                    clearInterval(hey);
+                }
+            },1000)
+            
+            
+
+        </script>
+    </body>
+</html>

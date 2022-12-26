@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title>exo tp web</title>
+      <meta charset="UTF-8">
+      
+      <meta name="description" content="its my web site ">
+     
+      <link rel="stylesheet" href="">
+       <script src="p1.js"></script>
+    </head>
+    <body>
+        <!--b1-->
+        <button onclick="console.log('hello')"> thunder :) </button>
+        <!--b2-->
+        <button onclick="hello()"> S.O.S </button>
+        <!--b3-->
+        <button id="btn"> ibtihal </button>
+        <script>
+            //event in html b1 and b2
+
+            //b2
+            function hello(){
+                console.log('hello');
+            }
+
+
+
+
+            // event in java scrpit - b3
+
+            let btn = document.getElementById('btn');
+            //m1  element.onevent
+            /*btn.onclick = function(){
+                console.log('chbghity endi');
+                document.body.style.backgroundColor = 'blue';
+            }*/
+            //m2  addEventListener
+            btn.addEventListener('click', function(){
+                console.log('chbghity endi');
+                document.body.style.backgroundColor = 'blue';
+            })
+                    // lfer9 bin m1 et m2
+                 /*
+                   - addeventlistener ayder lia bzaf d events de9a wehda
+                   -element.onevent ayder lia al event lekhrani
+                   
+                 */
+        </script>
+    </body>
+</html>

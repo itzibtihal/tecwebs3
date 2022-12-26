@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      
+      <meta charset="UTF-8">
+      
+      <meta name="description" content="its my web site ">
+     
+      <link rel="stylesheet" href="">
+       
+    </head>
+    <body>
+         <input  id="txt"   type="text" placeholder="OPEN">
+         <button id="btn"> click ! </button>
+
+         <script>
+            let txt = document.getElementById('txt');
+            let btn = document.getElementById('btn');
+             
+
+
+            window.onload = function(){
+                txt.focus();
+                // change the placeholder
+                //txt.value = 'test';
+                txt.placeholder ='tesst1'
+
+                btn.click();
+            }      
+            
+            txt.oncontextmenu = function (){
+                txt.blur
+            }
+            btn.onclick = function (){
+                btn.style.background = '#ffa';
+
+            }
+         </script>
+    </body>
+</html>

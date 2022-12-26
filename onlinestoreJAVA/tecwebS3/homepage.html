@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+   <title>exo tp web</title>
+   <meta charset="UTF-8">
+
+   <meta name="description" content="its my web site ">
+
+   <link rel="stylesheet" href="">
+   <script src="main.js"></script>
+
+
+</head>
+
+<body>
+
+
+   <!--
+        
+       <form action="">
+          <fieldset border:1px solid gray>
+            <legend> vos cordonnees</legend>
+            <table>
+               <tr>
+                  <td>nom</td>
+                  <td><input type="text" placeholder="votre nom"></td>
+               </tr>
+               <tr>
+                <td>prenom</td>
+                <td><input type="text" placeholder="votre prenom"></td>
+             </tr>
+             <tr>
+              <td>email</td>
+              <td><input type="email" placeholder="votre email"></td>
+           </tr>
+           <tr>
+            <td>code</td>
+            <td><input type="password" placeholder="votre mdp" maxlength="8"></td>
+         </tr>
+         <tr>
+          <td>Homme</td>
+          <td><input type="radio" name="sexe"></td>
+       </tr>
+       <tr>
+        <td>Homme</td>
+          <td><input type="radio" name="sexe"></td>
+       </tr>
+            </table>
+          </fieldset>
+        </form>
+        <button onclick="this.style.background = 'red'">
+            click
+        </button>
+      
+        -->
+
+   ---------------------------------------------
+
+
+   <h1 id="part1"> heey world </h1>
+
+
+   <p class="part2">heeey ibtihal labas elik</p>
+   <p class="part2">heeey ibtissam labas elik</p>
+   <p class="part2">heeey chraf labas elik</p>
+   <p class="part2">heeey rania labas elik</p>
+
+
+
+   <img src="img/OIP.jpg" alt="img ">
+   <img src="img/OIP (1).jpg" alt="img ">
+   <img src="img/img.jpg" alt="img ">
+
+
+
+   <a href="https://www.instagram.com/">instagram</a>
+   <a href="https://www.facebook.com/">facebook</a>
+   <a href="https://www.youtube.com/">youtube</a>
+
+
+   <!--forms-->
+   <form action="">
+      <input type="text" name="" id="">
+      <input type="text" name="" id="">
+   </form>
+   <script>
+      // get and set
+      // part 1
+
+      let part1 = document.getElementById("part1");
+      part1.innerHTML = 'test';
+      part1.style.color = 'red';
+      console.log(part1);
+
+
+      // part2
+      //let part2 = document.getElementsByClassName('part2')[1];
+      //let part2 = document.querySelector('.part2')
+      // let part2 = document.querySelectorAll('p');
+
+      //part2.style.color = 'blue';
+      //console.log(part2);
+
+
+      // body
+      let body = document.body;
+      body.style.background = 'yellow';
+      console.log(body);
+
+      // title
+      let title = document.title;
+      title = 'tecweb';
+      console.log(title);
+
+
+      // images
+
+      let images = document.images;
+
+      console.log(images);
+
+      // link 
+
+      let links = document.links;
+      console.log(links);
+
+      //forms
+      let forms = document.forms;
+      forms.removeAttribute('input');
+      console.log(forms);
+
+
+
+   </script>
+
+
+</body>
+
+</html>
